@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Usuario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+        header .logo span {
+            margin-left: 10px;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #fff;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+        .sidebar img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .content {
+            width: 80%;
+            padding: 20px;
+        }
+        .content .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #ddd;
+            border: 1px solid #ccc;
+        }
+        .content .section h3 {
+            margin: 0 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <div style="width: 40px; height: 40px; background-color: black; border-radius: 50%;"></div>
+        <span>LogoEmpresa</span>
+    </div>
+    <nav>
+        <input type="text" placeholder="Buscar" style="padding: 5px;">
+        <a href="registro.html">Registrarse</a>
+        <a href="ingresar.html">Acceder</a>
+    </nav>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h4>Menú Principal</h4>
+        <ul style="list-style: none; padding: 0;">
+            <li><a href="index.html">Portada</a></li>
+            <li><a href="actualizaciones.html">Actualizaciones</a></li>
+            <li>Lo más visto</li>
+            <li>Ayuda</li>
+        </ul>
+        <h4 style="margin-top: 20px;">Tus archivos vistos</h4>
+        <ul style="list-style: none; padding: 0;">
+            <li><img src="python-icon.png" alt="Python">Python</li>
+            <li><img src="c-icon.png" alt="C++">C++</li>
+            <li><img src="js-icon.png" alt="JavaScript">JavaScript</li>
+            <li><img src="kotlin-icon.png" alt="Kotlin">Kotlin</li>
+        </ul>
+    </aside>
+    <main class="content">
+        <h2>PORTADA</h2>
+        <div class="section">
+            <h3>Noticias del día</h3>
+            <p>...</p>
+        </div>
+        <div class="section">
+            <h3>Noticias importantes</h3>
+            <p>...</p>
+        </div>
+        <div class="section">
+            <h3>Frameworks y herramientas relacionadas</h3>
+            <p>...</p>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
